@@ -1,0 +1,16 @@
+.company-info {
+	margin-bottom: 30px;
+	.company-info-text {
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: 12px;
+		.company-name-detail {
+			font-weight: bold;
+		}
+	}
+}
+.content {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+}

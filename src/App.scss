@@ -46,6 +46,11 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 }
+.f-size-24 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
 
 .f-size-14 {
 	font-weight: 500;
@@ -76,4 +81,28 @@ body {
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-bottom: 14px;
+}
+.c-dodgerblue {
+	color: #1e86ff;
+}
+.t-decor {
+	text-decoration: none;
+}
+.full-time-btn {
+	border: 1px solid #334680;
+	width: 63px;
+	height: 26px;
+	justify-content: center;
+}
+.time-control {
+	font-size: 15px;
+	margin-right: 9px;
+}
+.location-control-detail {
+	font-weight: 500;
+	font-size: 15px;
+	margin-right: 8px;
+}
+.f-normal {
+	font-weight: normal;
 }

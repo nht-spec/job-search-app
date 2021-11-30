@@ -9,6 +9,7 @@ export default function useFilter(page, company, location, category, level) {
 				page,
 			}));
 	}, [page]);
+
 	useEffect(() => {
 		company &&
 			setFilters((prevFilters) => ({
