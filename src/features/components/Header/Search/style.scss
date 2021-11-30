@@ -1,0 +1,61 @@
+.search-company-control {
+	margin: 0 206px 0 205px;
+	position: relative;
+	.form-control {
+		width: 790px;
+		height: 55px;
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+		padding: 4px 4px 4px 16px;
+		.material-icons-round {
+			padding-right: 10px;
+			font-size: 15px;
+		}
+		.search-btn {
+			width: 146px;
+			height: 47px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+			background: #1e86ff;
+			color: #ffffff;
+			border: unset;
+		}
+	}
+	.list-company {
+		z-index: 2;
+		overflow-y: scroll;
+		border: rgba(0, 0, 0, 0.1) solid 1px;
+		top: 65px;
+		width: 100%;
+		max-height: 200px;
+		position: absolute;
+		padding: 15px 20px 15px 20px;
+		.company-options {
+			height: 40px;
+			padding-left: 12px;
+		}
+		.company-options:hover {
+			border: 1px rgba(0, 0, 0, 0.1) solid;
+		}
+	}
+}
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

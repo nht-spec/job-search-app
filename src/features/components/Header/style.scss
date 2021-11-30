@@ -1,0 +1,18 @@
+.header-control {
+	width: 1201px;
+	height: 138px;
+	margin-left: 120px;
+	margin-bottom: 42px;
+	position: relative;
+	.img-header {
+		z-index: -1;
+		border-radius: 8px;
+		position: absolute;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	.search-control {
+		padding: 42px 0 41px 0;
+	}
+}
