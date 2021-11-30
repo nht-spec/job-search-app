@@ -1,0 +1,41 @@
+.search-control {
+	width: 379px;
+	height: 48px;
+	display: inline-block;
+	padding-top: 15px;
+	position: relative;
+	.tooltiptext {
+		visibility: hidden;
+		width: 200px;
+		background-color: #b9bdcf;
+		text-align: center;
+		border-radius: 6px;
+		position: absolute;
+		top: -30px;
+		left: 0;
+		z-index: 1;
+	}
+	.search-form-company {
+		padding-left: 12px;
+		.material-icons-outlined {
+			font-size: 15px;
+			padding-right: 16px;
+		}
+	}
+	.list-location {
+		max-height: 200px;
+		overflow-y: scroll;
+		margin-top: 30px;
+		width: 100%;
+		.location-options {
+			height: 40px;
+			padding-left: 12px;
+		}
+		.location-options:hover {
+			border: 1px rgba(0, 0, 0, 0.1) solid;
+		}
+	}
+}
+.search-control:hover .tooltiptext {
+	visibility: visible;
+}

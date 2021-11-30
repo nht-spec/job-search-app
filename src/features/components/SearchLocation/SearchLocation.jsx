@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import InputField from '../../../components/Form-Control/InputField/InputField';
-
+import './style.scss';
 function SearchLocation({
 	searchlocation,
 	handlesubmit,
@@ -48,7 +48,11 @@ function SearchLocation({
 		valueInput === nameLocation &&
 			ischangesearchlocation &&
 			ischangesearchlocation(false);
-	}, [nameLocation, valueInput, ischangesearchlocation]);
+
+		if (valueInput && valueInput === nameLocation && isFocus) {
+			setIsFocus(false);
+		}
+	}, [nameLocation, valueInput, ischangesearchlocation, isFocus]);
 
 	useEffect(() => {
 		!valueInput && setNameLocation('');
@@ -56,26 +60,40 @@ function SearchLocation({
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit}>
-				<InputField
-					placeholder='City, state, zip code or country'
-					isfocus={setIsFocus}
-					namelocation={nameLocation}
-					valueinput={setValueInput}
-				/>
-			</form>
-			{isFocus && (
-				<div>
-					{listLocation.map((data, idx) => (
-						<ul onClick={() => setNameLocation(data)} className='' key={idx}>
-							<li className=''>{data}</li>
-						</ul>
-					))}
-					{listLocation.length === 0 && (
-						<p className='c-notfault'>No results found!!</p>
-					)}
-				</div>
-			)}
+			<p className='title f-size-14 c-silver'>Location</p>
+			<div className='search-control  br-while box-shadow  br-radius-4'>
+				<span className='tooltiptext c-notfault'>Press enter to search !!</span>
+				<form
+					className='search-form-company d-flex c-silver align-center'
+					onSubmit={handleSubmit}
+				>
+					<span className='material-icons-outlined'>public</span>
+
+					<InputField
+						placeholder='City, state, zip code or country'
+						isfocus={setIsFocus}
+						namelocation={nameLocation}
+						valueinput={setValueInput}
+					/>
+				</form>
+
+				{isFocus && (
+					<div className='list-location br-while box-shadow  br-radius-4'>
+						{listLocation.map((data, idx) => (
+							<ul
+								className='location-options d-flex align-center cursor bx-shadow br-radius-4'
+								onClick={() => setNameLocation(data)}
+								key={idx}
+							>
+								<li className='c-darkslateblue list-style f-size-18'>{data}</li>
+							</ul>
+						))}
+						{listLocation.length === 0 && (
+							<p className='c-notfault'>No results found!!</p>
+						)}
+					</div>
+				)}
+			</div>
 		</div>
 	);
 }

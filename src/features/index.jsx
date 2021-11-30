@@ -1,7 +1,9 @@
 import { Pagination } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import CategoryFilter from './components/CategoryFilter/CategoryFilter';
 import Header from './components/Header/Header';
 import JobList from './components/JobList/JobList';
+import LevelFilter from './components/LevelFilter/LevelFilter';
 import SearchLocation from './components/SearchLocation/SearchLocation';
 import useFilter from './hooks/useFilter';
 import useGetJobs from './hooks/useGetJobs';
@@ -10,9 +12,17 @@ function JobFeatures() {
 	const [page, setPage] = useState(1);
 	const [companyOfSearch, setCompanyOfSearch] = useState('');
 	const [locationOfSearch, setLocationOfSearch] = useState('');
+	const [category, setCategory] = useState('');
+	const [level, setLevel] = useState('');
 	const [isChangeSearch, setIsChangeSearch] = useState(false);
 	const [isChangeSearchLocation, setIsChangeSearchLocation] = useState(false);
-	const { filters } = useFilter(page, companyOfSearch, locationOfSearch);
+	const { filters } = useFilter(
+		page,
+		companyOfSearch,
+		locationOfSearch,
+		category,
+		level
+	);
 	const { job } = useGetJobs(filters);
 
 	const handleChange = (event, value) => {
@@ -36,15 +46,27 @@ function JobFeatures() {
 			/>
 			<div className='d-flex m-left content-control'>
 				<div className='filter-control'>
+					<div className='d-flex full-time align-center'>
+						<input
+							type='checkbox'
+							className='ip-check-box'
+							defaultChecked={true}
+						/>
+						<p className='f-size-14 c-darkslateblue'>Full time</p>
+					</div>
 					<SearchLocation
 						searchlocation={job && job.data.results}
 						handlesubmit={setLocationOfSearch}
 						ischangesearchlocation={setIsChangeSearchLocation}
 					/>
+					<CategoryFilter category={setCategory} />
+					<LevelFilter level={setLevel} />
 				</div>
 				<div className='job-pagi-control'>
+					{job?.data.results.length === 0 && <p>Not Fault</p>}
 					<JobList joblist={job && job.data.results} />
 					<Pagination
+						className='pagination'
 						count={job?.data?.page_count > 99 ? 99 : job?.data?.page_count}
 						page={page}
 						variant='outlined'

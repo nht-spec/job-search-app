@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function useFilter(page, company, location) {
+export default function useFilter(page, company, location, category, level) {
 	const [filters, setFilters] = useState({});
 	useEffect(() => {
 		page &&
@@ -36,6 +36,38 @@ export default function useFilter(page, company, location) {
 				return newFilter;
 			});
 	}, [location]);
+
+	useEffect(() => {
+		let sortCategory = [];
+		category && category.map((data) => sortCategory.push(data.category));
+		category.length !== 0 &&
+			setFilters((prevFilters) => ({
+				...prevFilters,
+				category: [sortCategory],
+			}));
+		category.length === 0 &&
+			setFilters((prevFilters) => {
+				const newFilter = { ...prevFilters };
+				delete newFilter.category;
+				return newFilter;
+			});
+	}, [category]);
+
+	useEffect(() => {
+		let sortLevel = [];
+		level && level.map((data) => sortLevel.push(data.level));
+		level.length !== 0 &&
+			setFilters((prevFilters) => ({
+				...prevFilters,
+				level: [sortLevel],
+			}));
+		level.length === 0 &&
+			setFilters((prevFilters) => {
+				const newFilter = { ...prevFilters };
+				delete newFilter.level;
+				return newFilter;
+			});
+	}, [level]);
 
 	return {
 		filters,
