@@ -9,13 +9,13 @@
 }
 @media all and (max-width: 767px) {
 	.not-found-result {
-		margin-bottom: 20px;
-		width: 351px;
-		margin-left: unset;
-		flex-direction: column;
+		margin-bottom: 20px !important;
+		width: 351px !important;
+		margin-left: unset !important;
+		flex-direction: column !important;
 		.img-not-found {
-			width: 100%;
-			object-fit: contain;
+			width: 100% !important;
+			object-fit: contain !important;
 		}
 		.not-found-text {
 			color: #ab003c;
