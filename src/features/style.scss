@@ -1,16 +1,3 @@
-.filter-control {
-	.full-time {
-		margin-bottom: 30px;
-		.ip-check-box {
-			margin-right: 12px;
-			width: 18px;
-			height: 18px;
-			border: 1px solid #b9bdcf;
-			border-radius: 2px;
-		}
-	}
-}
-
 .not-found-result {
 	margin-bottom: 20px;
 	width: 790px;
@@ -60,28 +47,7 @@
 	color: unset !important;
 }
 @media all and (max-width: 767px) {
-	.filter-control {
-		.full-time {
-			margin-bottom: 32px;
-		}
-	}
 	.pagination {
 		margin-right: 7px;
-	}
-	.not-found-result {
-		margin-bottom: 20px;
-		width: 351px;
-		margin-left: unset;
-		flex-direction: column;
-		.img-not-found {
-			width: 100%;
-			object-fit: contain;
-		}
-		.not-found-text {
-			color: #ab003c;
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 21px;
-		}
 	}
 }

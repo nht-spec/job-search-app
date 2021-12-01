@@ -1,0 +1,15 @@
+.full-time {
+	margin-bottom: 30px;
+	.ip-check-box {
+		margin-right: 12px;
+		width: 18px;
+		height: 18px;
+		border: 1px solid #b9bdcf;
+		border-radius: 2px;
+	}
+}
+@media all and (max-width: 767px) {
+	.full-time {
+		margin-bottom: 32px;
+	}
+}
