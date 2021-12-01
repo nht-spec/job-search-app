@@ -5,9 +5,9 @@ import './style.scss';
 
 function Header({ searchCompany, handlesubmit, ischangesearch }) {
 	return (
-		<div className='header-control'>
+		<div className='header-control width-100-mb'>
 			<img className='img-header' src={imageUrl.IMG_HEADER} alt='' />
-			<div className='search-control'>
+			<div className='search-control width-100-mb'>
 				<Search
 					searchCompany={searchCompany}
 					handlesubmit={handlesubmit}

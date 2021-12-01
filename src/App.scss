@@ -117,9 +117,49 @@ body {
 		margin-left: 12px;
 	}
 	.filter {
-		width: 351px !important;
+		width: 100% !important;
 	}
 	.d-flex-dir {
 		flex-direction: column;
+	}
+	body {
+		margin: 12px 12px 0 12px;
+	}
+	.width-100-mb {
+		width: 100% !important;
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1013px) {
+	.m-left {
+		margin-left: 12px;
+	}
+	.filter {
+		width: 100% !important;
+	}
+	.d-flex-dir {
+		flex-direction: column;
+	}
+	body {
+		margin: 12px 12px 0 12px;
+	}
+	.width-100-mb {
+		width: 100% !important;
+	}
+}
+@media all and (min-width: 1014px) and (max-width: 1335px) {
+	.m-left {
+		margin-left: 12px;
+	}
+	.filter {
+		width: 100% !important;
+	}
+	.d-flex-dir {
+		flex-direction: column;
+	}
+	body {
+		margin: 12px 12px 0 12px;
+	}
+	.width-100-mb {
+		width: 100% !important;
 	}
 }

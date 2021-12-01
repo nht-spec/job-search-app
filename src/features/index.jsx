@@ -64,6 +64,7 @@ function JobFeatures() {
 					{loading && <SkeletonLoading />}
 					{!loading && <JobList joblist={job && job.data.results} />}
 					<Pagination
+						size='small'
 						className='pagination'
 						count={job?.data?.page_count > 99 ? 99 : job?.data?.page_count - 1}
 						page={page}

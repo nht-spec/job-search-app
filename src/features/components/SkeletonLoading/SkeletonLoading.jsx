@@ -14,7 +14,7 @@ function SkeletonLoading({ length }) {
 		<>
 			{Array.from(new Array(length)).map((x, idx) => (
 				<div
-					className='skeleton-control cursor box-shadow br-radius-4 br-while'
+					className='skeleton-control width-100-mb cursor box-shadow br-radius-4 br-while'
 					key={idx}
 				>
 					<div className='skeleton-list d-flex-dir d-flex'>

@@ -12,7 +12,16 @@
 }
 @media all and (max-width: 767px) {
 	.logo-text-one {
-		width: 100%;
-		margin: 12px 0 32px 12px;
+		margin: 0 0 32px 0;
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1013px) {
+	.logo-text-one {
+		margin: 0 0 32px 0;
+	}
+}
+@media all and (min-width: 1014px) and (max-width: 1335px) {
+	.logo-text-one {
+		margin: 0 0 32px 0;
 	}
 }

@@ -4,7 +4,7 @@ import './style.scss';
 
 function HowToApply({ jobDetail }) {
 	return (
-		<div className='how-to-apply-btn-back'>
+		<div className='how-to-apply-btn-back width-100-mb '>
 			<div className='d-flex c-dodgerblue align-center btn-back-control'>
 				<span className='material-icons-outlined'>arrow_right_alt</span>
 				<Link className='c-dodgerblue f-size-14 link-home t-decor ' to='/home'>

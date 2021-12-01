@@ -55,7 +55,7 @@ function SearchLocation({
 	return (
 		<div>
 			<p className='title f-size-14 c-silver'>Location</p>
-			<div className='search-control  br-while box-shadow  br-radius-4'>
+			<div className='search-control  br-while box-shadow  br-radius-4 width-100-mb'>
 				<span className='tooltiptext c-notfault'>Press enter to search !!</span>
 				<form
 					className='search-form-company d-flex c-silver align-center'

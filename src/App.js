@@ -6,7 +6,7 @@ import DetailPage from './features/pages/DetailPage/DetailPage';
 
 function App() {
 	return (
-		<div className='App  o-flow'>
+		<div className='App o-flow'>
 			<LogoHeader />
 			<Switch>
 				<Redirect from='/' to='/home' exact />

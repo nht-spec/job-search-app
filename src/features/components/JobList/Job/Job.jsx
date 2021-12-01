@@ -12,11 +12,13 @@ function Job({ job }) {
 	};
 	return (
 		<div
-			className='d-flex d-flex-dir cursor job-control box-shadow br-radius-4 br-while f-family-two'
+			className='d-flex d-flex-dir cursor job-control box-shadow br-radius-4 br-while f-family-two width-100-mb'
 			onClick={handleClick}
 		>
 			<div className='d-flex'>
-				<Thumnail job={job} />
+				<div>
+					<Thumnail job={job} />
+				</div>
 				<InfoJob job={job} />
 			</div>
 			<div className='d-flex loca-time-control'>

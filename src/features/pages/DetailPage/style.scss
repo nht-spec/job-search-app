@@ -10,7 +10,32 @@
 		margin-top: 50px;
 	}
 }
+.skeleton-control {
+	.job-detail-control {
+		margin: 0 19px 0 12px;
+		.info-job {
+			width: 100%;
+		}
+	}
+}
+
 @media all and (max-width: 767px) {
+	.job-detail-control {
+		margin: 0 19px 0 12px;
+		.info-job {
+			width: 100%;
+		}
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1013px) {
+	.job-detail-control {
+		margin: 0 19px 0 12px;
+		.info-job {
+			width: 100%;
+		}
+	}
+}
+@media all and (min-width: 1014px) and (max-width: 1335px) {
 	.job-detail-control {
 		margin: 0 19px 0 12px;
 		.info-job {

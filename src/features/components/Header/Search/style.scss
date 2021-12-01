@@ -63,12 +63,26 @@
 	.search-company-control {
 		margin: 0 18px;
 		.form-control {
-			width: 315px;
 			height: 55px;
 			text-overflow: ellipsis;
 		}
-		.list-company {
-			width: 315px;
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1013px) {
+	.search-company-control {
+		margin: 0 100px;
+		.form-control {
+			height: 55px;
+			text-overflow: ellipsis;
+		}
+	}
+}
+@media all and (min-width: 1014px) and (max-width: 1335px) {
+	.search-company-control {
+		margin: 0 205px;
+		.form-control {
+			height: 55px;
+			text-overflow: ellipsis;
 		}
 	}
 }

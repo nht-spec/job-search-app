@@ -47,7 +47,7 @@ function Search({ searchCompany, handlesubmit, ischangesearch }) {
 	return (
 		<div className='search-company-control'>
 			<form
-				className='form-control br-while d-flex br-radius-4 align-center'
+				className='form-control br-while d-flex br-radius-4 align-center width-100-mb width-100-mb'
 				onSubmit={handleSubmit}
 			>
 				<span className='material-icons-round c-silver'>work_outline</span>
@@ -62,7 +62,7 @@ function Search({ searchCompany, handlesubmit, ischangesearch }) {
 				</button>
 			</form>
 			{isFocus && (
-				<div className='list-company br-while br-radius-4'>
+				<div className='list-company br-while br-radius-4 width-100-mb'>
 					{listCompany.map((data, idx) => (
 						<ul
 							onClick={() => setNameCompany(data)}

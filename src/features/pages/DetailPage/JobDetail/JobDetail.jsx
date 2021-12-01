@@ -11,7 +11,7 @@ function JobDetail({ jobDetail }) {
 		content = jobDetail.data.contents;
 	}
 	return (
-		<div className='f-family-two o-flow'>
+		<div className='f-family-two o-flow width-100-mb'>
 			<JobInfo jobinfo={jobDetail.data?.name} />
 			<TimeDetail time={jobDetail.data?.publication_date} />
 			<div className='d-flex company-info'>

@@ -18,8 +18,19 @@
 }
 @media all and (max-width: 767px) {
 	.header-control {
-		width: 351px;
 		height: 138px;
-		margin: 0 12px 29px 12px;
+		margin: 0 0 29px 0;
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1013px) {
+	.header-control {
+		height: 138px;
+		margin: 0 0 29px 0;
+	}
+}
+@media all and (min-width: 1014px) and (max-width: 1335px) {
+	.header-control {
+		height: 138px;
+		margin: 0 0 29px 0;
 	}
 }
