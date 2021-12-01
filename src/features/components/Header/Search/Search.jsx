@@ -33,11 +33,6 @@ function Search({ searchCompany, handlesubmit, ischangesearch }) {
 	useEffect(() => {
 		nameCompany && setIsFocus(false);
 
-		if (valueInput && valueInput !== nameCompany) {
-			ischangesearch && ischangesearch(true);
-			setNameCompany('');
-		}
-
 		if (!valueInput) {
 			ischangesearch && ischangesearch(true);
 		}

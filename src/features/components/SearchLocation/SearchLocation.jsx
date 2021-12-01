@@ -35,12 +35,6 @@ function SearchLocation({
 
 	useEffect(() => {
 		nameLocation && setIsFocus(false);
-
-		if (valueInput && valueInput !== nameLocation) {
-			ischangesearchlocation && ischangesearchlocation(true);
-			setNameLocation('');
-		}
-
 		if (!valueInput) {
 			ischangesearchlocation && ischangesearchlocation(true);
 		}

@@ -15,7 +15,7 @@ function DetailPage() {
 	if (loading) {
 		return (
 			<div className='job-detail-control loading-control'>
-				<LinearProgress color='success' />
+				<LinearProgress color='warning' />
 				<p className='c-darkslateblue f-size-24  loading-text'>Loading...</p>
 			</div>
 		);
