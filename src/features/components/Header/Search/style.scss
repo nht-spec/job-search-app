@@ -59,3 +59,16 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
+@media all and (max-width: 767px) {
+	.search-company-control {
+		margin: 0 18px;
+		.form-control {
+			width: 315px;
+			height: 55px;
+			text-overflow: ellipsis;
+		}
+		.list-company {
+			width: 315px;
+		}
+	}
+}

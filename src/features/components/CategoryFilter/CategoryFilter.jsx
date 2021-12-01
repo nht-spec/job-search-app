@@ -27,7 +27,7 @@ function CategoryFilter({ category }) {
 	}, [category, categoryChoose]);
 
 	return (
-		<div className='category-control'>
+		<div className='category-control filter'>
 			<p className='title f-size-14 c-silver'>category</p>
 			<div
 				className='c-darkslateblue cursor jst-content category-title br-while box-shadow br-radius-4 align-center d-flex'

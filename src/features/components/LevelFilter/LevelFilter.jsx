@@ -24,7 +24,7 @@ function LevelFilter({ level }) {
 	}, [level, levelChoose]);
 
 	return (
-		<div className='level-control'>
+		<div className='level-control filter'>
 			<p className='title f-size-14 c-silver'>level</p>
 			<div
 				className='c-darkslateblue cursor jst-content level-title br-while box-shadow br-radius-4 align-center d-flex'

@@ -12,7 +12,7 @@ function Job({ job }) {
 	};
 	return (
 		<div
-			className='d-flex cursor job-control box-shadow br-radius-4 br-while f-family-two'
+			className='d-flex d-flex-dir cursor job-control box-shadow br-radius-4 br-while f-family-two'
 			onClick={handleClick}
 		>
 			<div className='d-flex'>

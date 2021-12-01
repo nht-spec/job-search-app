@@ -9,3 +9,14 @@
 		align-items: flex-end;
 	}
 }
+@media all and (max-width: 767px) {
+	.job-control {
+		margin-left: 7px;
+		margin-bottom: 23px;
+		width: 344px;
+		height: 147px;
+		.loca-time-control {
+			justify-content: flex-end;
+		}
+	}
+}

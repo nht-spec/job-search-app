@@ -17,8 +17,8 @@ function SkeletonLoading({ length }) {
 					className='skeleton-control cursor box-shadow br-radius-4 br-while'
 					key={idx}
 				>
-					<div className='skeleton-list d-flex'>
-						<div className='d-flex skeleton-one'>
+					<div className='skeleton-list d-flex-dir d-flex'>
+						<div className='d-flex skeleton-one width-100'>
 							<Skeleton
 								animation='wave'
 								className='br-radius-4'
@@ -26,15 +26,15 @@ function SkeletonLoading({ length }) {
 								width={120}
 								height={90}
 							/>
-							<div className='skeleton-two'>
+							<div className='skeleton-two width-100'>
 								<Skeleton width='30%' animation='wave' />
 								<Skeleton width='60%' animation='wave' />
 								<Skeleton height='50%' animation='wave' width='20%' />
 							</div>
 						</div>
-						<div className='skeleton-three d-flex align-center'>
-							<Skeleton className='one' animation='wave' width='15%' />
-							<Skeleton width='15%' animation='wave' />
+						<div className='skeleton-three d-flex align-center width-100'>
+							<Skeleton className='one' animation='wave' width='20%' />
+							<Skeleton width='20%' animation='wave' />
 						</div>
 					</div>
 				</div>

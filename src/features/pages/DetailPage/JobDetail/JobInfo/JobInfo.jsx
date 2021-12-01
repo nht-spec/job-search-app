@@ -3,7 +3,7 @@ import './style.scss';
 
 function JobInfo({ jobinfo }) {
 	return (
-		<div className='d-flex align-center'>
+		<div className='d-flex align-center d-flex-dir job-info-control'>
 			<p className='f-size-24 c-darkslateblue job-name '>{jobinfo}</p>
 			<p className='f-size-12 d-flex align-center c-darkslateblue br-radius-4 full-time-btn'>
 				Full time

@@ -10,3 +10,11 @@
 		margin-top: 50px;
 	}
 }
+@media all and (max-width: 767px) {
+	.job-detail-control {
+		margin: 0 19px 0 12px;
+		.info-job {
+			width: 100%;
+		}
+	}
+}

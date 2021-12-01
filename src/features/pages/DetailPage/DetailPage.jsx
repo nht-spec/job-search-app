@@ -21,7 +21,7 @@ function DetailPage() {
 		);
 	}
 	return (
-		<div className='job-detail-control d-flex'>
+		<div className='job-detail-control d-flex d-flex-dir'>
 			<HowToApply jobDetail={jobDetail} />
 
 			<div className='info-job'>

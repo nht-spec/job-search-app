@@ -10,3 +10,9 @@
 		font-weight: 300;
 	}
 }
+@media all and (max-width: 767px) {
+	.logo-text-one {
+		width: 100%;
+		margin: 12px 0 32px 12px;
+	}
+}

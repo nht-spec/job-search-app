@@ -5,19 +5,36 @@
 	margin-bottom: 32px;
 	padding: 12px;
 	.skeleton-list {
-		.skeleton-one {
-			width: 100%;
-		}
 		.skeleton-two {
-			width: 100%;
 			margin-left: 16px;
 		}
 		.skeleton-three {
-			width: 100%;
 			align-items: flex-end;
 			justify-content: flex-end;
 			.one {
 				margin-right: 29px;
+			}
+		}
+	}
+}
+@media all and (max-width: 767px) {
+	.skeleton-control {
+		width: 344px;
+		height: 147px;
+		margin-left: 12px;
+		margin-bottom: 23px;
+		overflow: hidden;
+		.skeleton-list {
+			.skeleton-two {
+				margin-left: 16px;
+			}
+			.skeleton-three {
+				margin-top: 10px;
+				margin-left: 46px;
+				justify-content: space-evenly;
+				.one {
+					margin-right: 29px;
+				}
 			}
 		}
 	}

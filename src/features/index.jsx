@@ -46,7 +46,7 @@ function JobFeatures() {
 				handlesubmit={setCompanyOfSearch}
 				ischangesearch={setIsChangeSearch}
 			/>
-			<div className='d-flex m-left content-control'>
+			<div className='d-flex m-left content-control d-flex-dir'>
 				<div className='filter-control'>
 					<div className='d-flex full-time align-center'>
 						<input

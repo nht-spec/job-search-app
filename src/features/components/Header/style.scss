@@ -16,3 +16,10 @@
 		padding: 42px 0 41px 0;
 	}
 }
+@media all and (max-width: 767px) {
+	.header-control {
+		width: 351px;
+		height: 138px;
+		margin: 0 12px 29px 12px;
+	}
+}

@@ -1,3 +1,13 @@
 .job-name {
 	margin-right: 17px;
 }
+@media all and (max-width: 767px) {
+	.job-info-control {
+		align-items: unset;
+		.job-name {
+			margin-top: 36px;
+			margin-bottom: 4px;
+			margin-right: unset;
+		}
+	}
+}

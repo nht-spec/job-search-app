@@ -106,3 +106,20 @@ body {
 .f-normal {
 	font-weight: normal;
 }
+.width-100 {
+	width: 100%;
+}
+.o-flow {
+	overflow: hidden;
+}
+@media all and (max-width: 767px) {
+	.m-left {
+		margin-left: 12px;
+	}
+	.filter {
+		width: 351px !important;
+	}
+	.d-flex-dir {
+		flex-direction: column;
+	}
+}

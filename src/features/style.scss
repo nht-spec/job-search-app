@@ -59,3 +59,29 @@
 	border: unset !important;
 	color: unset !important;
 }
+@media all and (max-width: 767px) {
+	.filter-control {
+		.full-time {
+			margin-bottom: 32px;
+		}
+	}
+	.pagination {
+		margin-right: 7px;
+	}
+	.not-found-result {
+		margin-bottom: 20px;
+		width: 351px;
+		margin-left: unset;
+		flex-direction: column;
+		.img-not-found {
+			width: 100%;
+			object-fit: contain;
+		}
+		.not-found-text {
+			color: #ab003c;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+		}
+	}
+}
