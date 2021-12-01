@@ -65,7 +65,7 @@ function JobFeatures() {
 					{!loading && <JobList joblist={job && job.data.results} />}
 					<Pagination
 						className='pagination'
-						count={job?.data?.page_count > 99 ? 99 : job?.data?.page_count}
+						count={job?.data?.page_count > 99 ? 99 : job?.data?.page_count - 1}
 						page={page}
 						variant='outlined'
 						shape='rounded'
