@@ -17,7 +17,13 @@ export default function useGetJobs(filters) {
 				}
 				setLoading(false);
 			})();
-	}, [filters]);
+	}, [
+		filters.page,
+		filters.company,
+		filters.location,
+		filters.category,
+		filters.level,
+	]);
 
 	if (job.length !== 0) {
 		return {

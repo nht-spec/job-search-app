@@ -10,6 +10,17 @@
 		}
 	}
 }
+
+.not-found-result {
+	margin-bottom: 20px;
+	width: 790px;
+	margin-left: 32px;
+	flex-direction: column;
+	.not-found-text {
+		color: #ab003c;
+	}
+}
+
 .pagination {
 	float: right;
 	margin-bottom: 50px;

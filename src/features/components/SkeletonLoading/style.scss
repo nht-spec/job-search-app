@@ -1,0 +1,24 @@
+.skeleton-control {
+	width: 790px;
+	height: 114px;
+	margin-left: 32px;
+	margin-bottom: 32px;
+	padding: 12px;
+	.skeleton-list {
+		.skeleton-one {
+			width: 100%;
+		}
+		.skeleton-two {
+			width: 100%;
+			margin-left: 16px;
+		}
+		.skeleton-three {
+			width: 100%;
+			align-items: flex-end;
+			justify-content: flex-end;
+			.one {
+				margin-right: 29px;
+			}
+		}
+	}
+}

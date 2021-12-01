@@ -5,9 +5,11 @@ import Header from './components/Header/Header';
 import JobList from './components/JobList/JobList';
 import LevelFilter from './components/LevelFilter/LevelFilter';
 import SearchLocation from './components/SearchLocation/SearchLocation';
+import SkeletonLoading from './components/SkeletonLoading/SkeletonLoading';
 import useFilter from './hooks/useFilter';
 import useGetJobs from './hooks/useGetJobs';
 import './style.scss';
+
 function JobFeatures() {
 	const [page, setPage] = useState(1);
 	const [companyOfSearch, setCompanyOfSearch] = useState('');
@@ -23,7 +25,7 @@ function JobFeatures() {
 		category,
 		level
 	);
-	const { job } = useGetJobs(filters);
+	const { loading, job } = useGetJobs(filters);
 
 	const handleChange = (event, value) => {
 		setPage(value);
@@ -63,8 +65,16 @@ function JobFeatures() {
 					<LevelFilter level={setLevel} />
 				</div>
 				<div className='job-pagi-control'>
-					{job?.data.results.length === 0 && <p>Not Fault</p>}
-					<JobList joblist={job && job.data.results} />
+					{job?.data.results.length === 0 && (
+						<div className='not-found-result d-flex align-center br-while br-radius-4'>
+							<img className='img-not-found' src='./notfound.png' alt='' />
+							<p className='not-found-text f-size-24'>
+								No available jobs found, please check again!
+							</p>
+						</div>
+					)}
+					{loading && <SkeletonLoading />}
+					{!loading && <JobList joblist={job && job.data.results} />}
 					<Pagination
 						className='pagination'
 						count={job?.data?.page_count > 99 ? 99 : job?.data?.page_count}
