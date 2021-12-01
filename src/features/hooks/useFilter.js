@@ -4,9 +4,10 @@ export default function useFilter(page, company, location, category, level) {
 	const [filters, setFilters] = useState({});
 	useEffect(() => {
 		page &&
-			setFilters({
+			setFilters((prevFilters) => ({
+				...prevFilters,
 				page,
-			});
+			}));
 	}, [page]);
 
 	useEffect(() => {
