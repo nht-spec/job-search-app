@@ -1,12 +1,12 @@
 import React from 'react';
-import imageUrl from '../../../constant/image-url';
+import header from './header.png';
 import Search from './Search/Search';
 import './style.scss';
 
 function Header({ searchCompany, handlesubmit, ischangesearch }) {
 	return (
 		<div className='header-control width-100-mb'>
-			<img className='img-header' src={imageUrl.IMG_HEADER} alt='' />
+			<img className='img-header' src={header} alt='' />
 			<div className='search-control width-100-mb'>
 				<Search
 					searchCompany={searchCompany}
